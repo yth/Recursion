@@ -3,4 +3,3 @@
 (define l (quote ("bacon")))
 
 (lat? l)
-

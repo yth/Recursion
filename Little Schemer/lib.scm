@@ -11,7 +11,6 @@
 
 (define member?
 	(lambda (a lat)
-		((null? lat) #f)
-		(else (or
-			(eq? (car lat) a)
-			(member? a (cdr lat))))))
+		(cond
+  	 	((null? lat) #f)
+    	(else (or (eq? (car lat) a) (member? a (cdr lat)))))))
